@@ -3,7 +3,7 @@ import './NavigationList.scss'
 export default function NavigationList() {
     return (
         <nav className="header__nav">
-            <ul class="header__list">
+            <ul className="header__list">
                 <li className="header__item"><a href="#" className="header__link">О компании</a></li>
                 <li className="header__item"><a href="#" className="header__link">Преимущества</a></li>
                 <li className="header__item"><a href="#" className="header__link">Услуги</a></li>

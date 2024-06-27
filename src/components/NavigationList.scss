@@ -1,3 +1,11 @@
+// @font-face {
+// 	font-family: JetBrains Mono;
+// 	font-display: swap;
+// 	src: url("../fonts/JetBrainsMono-Regular.woff2") format("woff2");
+// 	font-weight: 400;
+// 	font-style: normal;
+// }
+
 .header {
 
     // &__nav {
@@ -9,6 +17,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: 30px;
+        gap: 30px;        
     }
 }
