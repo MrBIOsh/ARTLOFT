@@ -1,5 +1,8 @@
 import { useState } from 'react';
 import './App.scss';
+import artloftsvg from './assets/promo_artloft.svg';
+import curves from './assets/test.svg';
+import promoImg from './assets/promo.png'
 import Header from './components/Header';
 
 function App() {
@@ -26,8 +29,14 @@ function App() {
                 <p className="promo__text">Мы занимаемся изготовлением мебели разного уровня - от эконом до премиум класса</p>
               </div>
             </div>
-            <div className="promo__box-two"></div>
-          </div>    
+            <div className="promo__box-two">
+              <img className='curves' src={curves} style={{width: '99.5%', zIndex: '-1'}} alt="curves" />
+              <img src={artloftsvg} style={{width: '100%'}} alt="ARTLOFT-SVG" />
+              <div>
+                <img src={promoImg} style={{width: '100%'}} alt="promo" />
+              </div>
+            </div>
+          </div>
         </div>          
         <div style={{height: `2px`, backgroundColor: '#fff'}}></div>           
         <div className="lines" style={{width: '100%', height: '100%'}}>
