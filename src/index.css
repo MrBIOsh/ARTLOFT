@@ -4,8 +4,20 @@ html {
   font-size: 10px;
 }
 
+@media (max-width: 1016px) {
+  html {
+    font-size: 8px;
+  }
+
+  @media (max-width: 470px) {
+    html {
+      font-size: 6px;
+    }
+  }
+}
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Inter, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -27,6 +39,37 @@ body {
   max-width: 1487px;
   margin: 0 auto;
   padding: 0 10px;
+
+  @media (max-width: 900px) {    
+    max-width: 708px;
+  }
+}
+
+
+
+.container-promo {
+  position: relative;
+  z-index: 1;
+}
+
+.container-promo::after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+}
+
+.container-promo::before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  right: 0;
+  top: 0;
+  background-color: #fff;
 }
 
 a {
@@ -41,7 +84,7 @@ a:hover {
 p {
   margin: 0;
 }
-
+/* 
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -52,7 +95,7 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
-}
+} */
 button:hover {
   border-color: #646cff;
 }

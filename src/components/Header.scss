@@ -1,15 +1,17 @@
+$header-black: #1B1B1B;
+
 .header {
-    display: flex;
-    align-items: center;
-    height: 7.5rem;
     font-size: 1.6rem;  
     font-family: 'JetBrainsMono', monospace;
+    background-color: $header-black;
+    padding: 0 20px;
 
     &__box {
         display: flex;
         align-items: center;
         gap: 50px;
         width: 100%;
+        padding: 1rem 0;
 
         @media (max-width: 1120px) {
             gap: 20px;
@@ -28,9 +30,12 @@
             gap: 20px;
         }
 
-        @media (max-width: 1015px) {
+        // @media (max-width: 1015px) {
+        //     gap: 15px;
+        // }
+
+        @media (max-width: 900px) {            
             flex-basis: auto;
-            gap: 15px;
         }
     }
 

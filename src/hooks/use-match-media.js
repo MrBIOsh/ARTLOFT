@@ -2,7 +2,7 @@ import { useState, useLayoutEffect } from "react";
 
 const queries = [
     '(max-width: 480px)',
-    '(max-width: 768px)',
+    '(max-width: 900px)',
     '(min-width: 1016px)',
 ];
 
@@ -22,7 +22,7 @@ export const useMatchMedia = () => {
         mediaQueryLists.forEach(mql => mql.addEventListener('change', handler));
 
         return () => mediaQueryLists.forEach(mql => mql.removeEventListener('change', handler));
-    });
+    }, []);
 
     return ['isMobile', 'isTablet', 'isDesktop'].reduce((acc, screen, index) => ({
         ...acc,

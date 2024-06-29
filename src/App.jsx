@@ -1,19 +1,23 @@
 import { useState } from 'react';
+import { useMatchMedia } from './hooks/use-match-media';
 import './App.scss';
 import artloftsvg from './assets/promo_artloft.svg';
-import curves from './assets/test.svg';
+import curves from './assets/curves-src.svg';
+import curvesTablet from './assets/curves-tablet.svg';
 import promoImg from './assets/promo.png'
 import Header from './components/Header';
 
 function App() {
+    const {isMobile, isTablet, isDesktop} = useMatchMedia();
+
     const heights = [4, 3.23, 3.08, 2, 1.85, 1.38, 1.08, 0.46];
 
   return (
     <>
-      <div>
+      <div>        
+        <Header />
         <div className='promo'>
-          <div className="container">
-            <Header />
+          <div className="container container-promo">
             <div className="promo__box-one">
               <div className="promo__left">
                 <p className="promo__text">
@@ -30,7 +34,7 @@ function App() {
               </div>
             </div>
             <div className="promo__box-two">
-              <img className='curves' src={curves} style={{width: '99.5%', zIndex: '-1'}} alt="curves" />
+              <img className='curves' src={!isTablet ? curves : curvesTablet} style={{width: '99.5%', zIndex: '-1'}} alt="curves" />
               <img src={artloftsvg} style={{width: '100%'}} alt="ARTLOFT-SVG" />
               <div>
                 <img src={promoImg} style={{width: '100%'}} alt="promo" />
@@ -41,9 +45,9 @@ function App() {
         <div style={{height: `2px`, backgroundColor: '#fff'}}></div>           
         <div className="lines" style={{width: '100%', height: '100%'}}>
               {heights.map((height, index) => (
-                <div key={10+index} className='linewrap' style={{height: '4px', position: 'relative'}}>
+                // <div key={10+index} className='linewrap' style={{height: '4px', position: 'relative'}}>
                   <div key={index} className='line' style={{height: `${height}px`, opacity: `calc(0.9 - 0.${index})`}}></div>
-                </div>
+                // </div>
               ))}
         </div>
         <main>
