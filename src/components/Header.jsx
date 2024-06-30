@@ -14,7 +14,7 @@ export default function Header() {
                 <div className="header__box">
                     <img src={logo} alt={'logo'} className="header__logo"/> 
                     <div className="header__navigation">
-                        {!isTablet ? (<NavigationList />) : (<button className='burgerMenu'></button>)}                        
+                        {isDesktop ? (<NavigationList />) : (<button className='burgerMenu'></button>)}                        
                         <a href="tel:+79625873031" className="header__link header__link-phone">8 (962) 587-30-31</a>
                     </div>
                 </div>

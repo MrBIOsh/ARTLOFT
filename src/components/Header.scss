@@ -1,10 +1,12 @@
-$header-black: #1B1B1B;
-
 .header {
     font-size: 1.6rem;  
     font-family: 'JetBrainsMono', monospace;
     background-color: $header-black;
     padding: 0 20px;
+
+    @media (max-width: 470px) {        
+        padding: 0 10px;
+    }
 
     &__box {
         display: flex;
@@ -12,6 +14,21 @@ $header-black: #1B1B1B;
         gap: 50px;
         width: 100%;
         padding: 1rem 0;
+
+        > img {
+            width: 55px;
+            height: 55px;
+
+            @media (max-width: 900px) {
+                width: 40px;
+                height: 40px;
+            }
+
+            @media (max-width: 470px) {
+                width: 30px;
+                height: 30px;
+            }
+        }
 
         @media (max-width: 1120px) {
             gap: 20px;
@@ -37,6 +54,10 @@ $header-black: #1B1B1B;
         @media (max-width: 900px) {            
             flex-basis: auto;
         }
+
+        @media (max-width: 470px) {            
+            gap: 18px;
+        }
     }
 
     &__link {
@@ -59,4 +80,9 @@ $header-black: #1B1B1B;
     cursor: pointer;
     background-color: transparent;
     order: 1;
+
+    @media (max-width: 470px) {
+        width: 17px;
+        height: 12px;
+    }
 }

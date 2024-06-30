@@ -1,0 +1,107 @@
+.about {
+    padding-top: 17rem;
+
+    &__box {
+        position: relative;
+        text-align: right;
+    }
+
+    &__brackets {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        top: 20px;
+        left: 0;
+        width: 227px;
+        height: 115px;       
+        transform: rotate(-15deg);
+
+        > svg {            
+            height: inherit;
+        }
+
+        .bracketL {
+            > path {
+                fill: #000;
+            }
+        }
+
+        .bracketR {
+            transform: scaleX(-1);
+        }
+
+        picture {
+            width: 100%;            
+            height: 100%;
+            transform: rotate(15deg);
+            overflow: hidden;
+            position: relative;
+        }
+
+        img {
+            position: absolute;
+            width: 100%;   
+            height: 100%;     
+            object-fit: contain;    
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+    }
+
+    &__content {        
+        width: 100%;
+        max-width: 112rem;
+        margin-left: auto;
+    }
+
+    &__title {
+        font-size: 7rem;
+        text-indent: 37.7rem;
+        letter-spacing: -3.9px;
+        line-height: .9;
+        white-space: pre-wrap;
+    }
+
+    &__description {
+        display: flex;
+        justify-content: end;
+
+        &-l {
+            width: 50.8rem;
+            text-align: left;
+        }
+
+        &-m {
+            width: 37rem;
+            text-align: left;
+            margin-left: auto;
+            padding-right: 30px;
+        }
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        flex-basis: 759px;
+    }
+}
+
+.description {
+    &-l {
+        font-size: 2.4rem;
+        font-weight: 600;
+        line-height: 1;
+        letter-spacing: -1.5px;
+        text-transform: uppercase;
+    }
+
+    &-m {
+        font-family: "JetBrainsMono";
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 1;
+        letter-spacing: -1.5px;
+    }
+}

@@ -4,6 +4,17 @@ import react from '@vitejs/plugin-react'
 import { createHtmlPlugin } from 'vite-plugin-html'
 
 export default defineConfig({
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@import "./src/assets/scss/varibles.scss";`
+      }
+    }
+  },
+  server: {
+    open: './index.html',
+    port: 3000,
+  },
   plugins: [
     react(),
     createHtmlPlugin({
