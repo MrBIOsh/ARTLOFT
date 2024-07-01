@@ -44,7 +44,7 @@
     &__box-one {
       display: flex;
       justify-content: space-between;
-      padding: 4.8rem 0 6.5rem;    
+      padding: 4.8rem 0 8.1rem;    
       gap: 20px;
       flex-wrap: wrap;
   
@@ -56,7 +56,9 @@
     }
   
     &__left {
-      width: 47.7rem;
+      width: 47.7rem;      
+      letter-spacing: -1.8px;
+      line-height: 3rem;
   
       @media (max-width: 900px) {
         width: 38rem;
@@ -65,7 +67,9 @@
   
     &__right {
       width: 100%;
-      max-width: 25.2rem;
+      max-width: 25.65rem;
+      letter-spacing: -1.34px;
+      line-height: 1.03;
   
       @media (max-width: 900px) {
         max-width: 20.5rem;
@@ -82,7 +86,6 @@
       .promo__text {
         font-size: 2rem;
         font-family: 'JetBrainsMono', sans-serif;
-        line-height: 2rem;
       }
     }
   
@@ -90,8 +93,6 @@
       color: #fff;
       font-size: 3rem;
       font-family: 'Inter', sans-serif;
-      letter-spacing: -1.6px;
-      line-height: 3.3rem;
   
       @media (max-width: 900px) {
         font-size: 2.5rem;
@@ -105,7 +106,7 @@
   
     &__text:first-child {
       span {
-        margin-left: 2rem;
+        margin-left: 4.45rem;
       }
     }
   
@@ -123,7 +124,7 @@
   
       &::before {
         content: '';
-        background-image: url('./assets/asteriks.svg');
+        background-image: url('../asteriks.svg');
         width: 33px;
         height: 36px;
         background-repeat: no-repeat;
@@ -138,7 +139,7 @@
     }
   
     &__box-two {
-      height: 46.8rem;
+      height: 45.5rem;
   
       @media (max-width: 1540px) {
         height: calc(23.5rem + 15vw);    

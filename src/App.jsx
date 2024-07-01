@@ -25,7 +25,7 @@ function App() {
                 <p className="promo__text">
                   компания,<br />
                   <span>которая реализует любые </span>
-                  проекты из металла лдсп и дерева,
+                  проекты из металла, лдсп и дерева,
                 </p>
                 <p className="promo__text asterisk">
                   создает уникальную<br /> мебель в стиле loft.
@@ -66,7 +66,7 @@ function App() {
                   </div>
                   <div className="about__content">
                     <h2 className="about__title">                      
-                      Наличие   собственной производственной базы позволяет воплощать   самые разнообразные идеи и проекты.
+                      Наличие&nbsp;собственной производственной базы позволяет воплощать  самые разнообразные идеи и проекты.
                     </h2>
                     <div className="about__description">
                       <div className="about__text">                        
