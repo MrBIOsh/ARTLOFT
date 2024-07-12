@@ -78,6 +78,23 @@ function App() {
                   </div>
                 </div>
               </section>
+              <section className="advantage">
+                <h1 className="advantage__title">Нам важно Ваше доверие</h1>
+                <div className="advantage__box">
+                  <div className="advantage__flex">
+                    <p className="advantage__text description-m">Поэтому мы стремимся решить все возможные нюансы на&nbsp;каждом этапе работы.</p>
+                  </div>
+                  <ul className="advantage__list">
+                    <li className="advantage__item">Доставка в любые регионы и установка бесплатно</li>
+                    <li className="advantage__item">Соблюдение сроков</li>
+                    <li className="advantage__item">Наличный и безналичный расчет</li>
+                    <li className="advantage__item">Работа по эскизам и по фотографиям</li>
+                    <li className="advantage__item">Скидки для постоянных клиентов и их друзей</li>
+                    <li className="advantage__item">Высокое качество и соответствие ГОСТ</li>
+                    <li className="advantage__item">Выгодные цены на крупные заказы</li>
+                  </ul>
+                </div>
+              </section>
           </div>
         </main> 
       </div>
