@@ -1,6 +1,10 @@
 .about {
     padding-top: 17rem;
 
+    @media (max-width: 900px) {        
+        padding-top: 12rem;
+    }
+
     &__box {
         position: relative;
         // text-align: right;
@@ -27,6 +31,38 @@
             top: auto;
             bottom: 7px;
             left: 25px;
+        }
+
+        @media (max-width: 1016px) {
+            top: 12px;
+            bottom: 0;
+            left: 0;
+            width: 142px;
+            height: 85px;
+        }
+
+        @media (max-width: 900px) {
+            top: auto;
+            bottom: 10px;
+            left: -5px;
+            width: 202px;
+            height: 120px;
+        }
+
+        @media (max-width: 640px) {
+            top: auto;
+            bottom: 10px;
+            left: -5px;
+            width: 159px;
+            height: 89px;
+        }
+
+        @media (max-width: 480px) {
+            top: auto;
+            bottom: 10px;
+            left: -5px;
+            width: 115px;
+            height: 60px;
         }
 
         > svg {            
@@ -79,22 +115,42 @@
 
     &__title {
         font-size: 7rem;
-        text-indent: 37.8rem;
         text-align: justify;
         letter-spacing: -4.25px;
         line-height: 0.842;
         margin-bottom: 3rem;
         white-space: pre-wrap;
+        width: 100%;
+
+        span {
+            display: block;
+            margin-left: auto;
+            text-align: right;
+
+            @media (max-width: 480px) {
+                text-align: left;
+            }
+        }
 
         @media (max-width: 1423px) {
             font-size: 6rem;
-            text-indent: 31rem;
         }
 
-        // @media (max-width: 1130px) {
-        //     font-size: 5rem;
-        //     text-indent: 31rem;
-        // }
+        @media (max-width: 900px) {
+            font-size: 5.3rem;
+            letter-spacing: -2.5px;    
+        }
+
+        @media (max-width: 700px) {              
+            font-size: calc(23% + 5.5vw);      
+        }
+
+        @media (max-width: 480px) {     
+            font-size: calc(5% + 6.17vw);
+            white-space: normal;
+            text-align: left;
+            letter-spacing: -1.5px;  
+        }
     }
 
     &__description {
@@ -110,11 +166,23 @@
                 width: 44.8rem;  
                 font-size: 2.2rem;
             }
+
+            @media (max-width: 900px) {
+                width: 37.75rem;  
+            }
         }
 
         &-m {            
-            width: 37rem;
+            width: 37.9rem;
             font-size: 2rem;
+
+            @media (max-width: 900px) {
+                width: 34.5rem;  
+            }
+
+            @media (max-width: 420px) {
+                width: 27rem;  
+            }
         }
         
         img {
@@ -129,6 +197,33 @@
                 right: 19px;
                 width: 220px;
             }
+
+            @media (max-width: 1016px) {
+                top: -69px;
+                right: 3px;
+                width: 190px;
+            }
+
+            @media (max-width: 900px) {
+                top: -62px;
+                width: 140px;
+                right: 0;
+            }
+
+            @media (max-width: 700px) {
+                top: calc(-9% + -5.2vw);
+                width: calc(48% - 25.57vw);
+            }
+
+            @media (max-width: 480px) {
+                top: calc(-9% + -0.2vw);
+                width: calc(48% - 28.57vw);
+                right: 1px;
+            }
+
+            @media (max-width: 420px) {
+                top: calc(-9% + 0.7vw);
+            }
         }
     }
 
@@ -138,8 +233,7 @@
         gap: 1.5rem;
         flex-basis: 76rem;
 
-        @media (max-width: 1423px) {
-            
+        @media (max-width: 1423px) {            
             flex-basis: 68.5rem;
         }
     }
@@ -152,6 +246,16 @@
         line-height: 1.085;
         letter-spacing: -0.7px;
         text-transform: uppercase;
+
+        @media (max-width: 900px) {
+            letter-spacing: -0.25px;
+            line-height: 1.12;
+        }
+
+        @media (max-width: 480px) {
+            letter-spacing: -0.25px;
+            line-height: 1.12;
+        }
     }
 
     &-m {
@@ -165,6 +269,14 @@
 
         @media (max-width: 1423px) {
             padding-right: 0;
+        }
+
+        @media (max-width: 900px) {
+            letter-spacing: -1.18px;
+        }
+
+        @media (max-width: 480px) {
+            letter-spacing: -1.18px;
         }
     }
 }

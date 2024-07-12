@@ -1,7 +1,7 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 import { createHtmlPlugin } from 'vite-plugin-html'
+import autoprefixer from 'autoprefixer';
 
 export default defineConfig({
   css: {
@@ -9,6 +9,11 @@ export default defineConfig({
       scss: {
         additionalData: `@import "./src/assets/scss/varibles.scss";`
       }
+    },
+    postcss: {
+      plugins: [
+        autoprefixer({})
+      ]
     }
   },
   server: {
@@ -50,4 +55,29 @@ export default defineConfig({
       },
     }),
   ],
+  build: {
+    target: 'esnext',
+    outDir: 'dist',
+    assetsDir: 'assets',
+    sourcemap: false,
+    cssCodeSplit: true,
+    rollupOptions: {
+      output: {
+        assetFileNames: ({name}) => {
+          let outputDir = null;
+          let ext = name.substring(name.lastIndexOf(".") + 1);
+          if (['woff2','woff','ttf'].includes(ext)) {
+            outputDir = "fonts";
+          } else if (['jpg','jpeg','png','gif','webp','svg', 'ico'].includes(ext)) {
+            outputDir = "img";
+          } else if ('css'.includes(ext)) {
+            outputDir = "css"
+          }
+
+          return `assets/${outputDir}/[name]-[hash].[ext]`;
+        },
+        entryFileNames: "js/[name]-[hash].js",
+      }
+    }
+  },
 })
