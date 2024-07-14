@@ -43,13 +43,13 @@
         justify-content: space-between;
         align-items: stretch;
         position: relative;
-        gap: 10rem;
+        gap: 6rem;
 
         @media (max-width: 900px) {
-            gap: 3rem;
+            gap: 11rem;
         }
 
-        @media (max-width: 555px) {
+        @media (max-width: 600px) {
             flex-direction: column;
             gap: 2rem;
         }
@@ -66,7 +66,7 @@
                 height: 7px;
             }
 
-            @media (max-width: 555px) {                
+            @media (max-width: 600px) {                
                 height: 2px;
             }
         }
@@ -87,13 +87,13 @@
             background-color: #C53826;
             border-radius: 50%;
 
-            @media (max-width: 555px) {
+            @media (max-width: 480px) {
                 width: 20px;
                 height: 20px;
             }
         }
 
-        @media (max-width: 555px) {
+        @media (max-width: 600px) {
             flex-direction: row;
             margin-top: 0;
         }
@@ -116,11 +116,15 @@
         justify-content: space-between;
         flex-basis: 74.7rem;
 
+        @media (max-width: 1423px) {
+            flex-basis: 61.7rem;
+        }
+
         @media (max-width: 900px) {
             flex-basis: 49.75rem;
         }
 
-        @media (max-width: 555px) {
+        @media (max-width: 600px) {
             flex-basis: auto;
         }
     }

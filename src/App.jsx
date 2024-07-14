@@ -65,9 +65,9 @@ function App() {
                     </svg>
                   </div>
                   <div className="about__content">
-                    <h2 className="about__title">                      
-                      <span>Наличие&nbsp;собственной</span>производственной базы позволяет воплощать  самые разнообразные идеи и проекты.
-                    </h2>
+                    <h3 className="about__title">                      
+                      Наличие&nbsp;собственной производственной базы позволяет воплощать  самые разнообразные идеи и проекты.
+                    </h3>
                     <div className="about__description">
                       <div className="about__text">                        
                         <p className="description-l about__description-l">Добро пожаловать в мир ArtLoft — компании, целью которой является создание уникальной мебели в  современном стиле loft.</p>                      
@@ -93,6 +93,51 @@ function App() {
                     <li className="advantage__item">Высокое качество и соответствие ГОСТ</li>
                     <li className="advantage__item">Выгодные цены на крупные заказы</li>
                   </ul>
+                </div>
+              </section>
+              <section className="services">
+                <div className="services__header">
+                  <h2 className="services__title title-3">услуги</h2>
+                  <div className="services__box">
+                    <p className="services__description description-m">Деятельность нашей компании заключается в производстве мебели в&nbsp;стиле loft и различных изделий из&nbsp;дерева, ЛДСП и металла. Однако наши специалисты всегда готовы оказать базовые услуги по обработке металла.</p>
+                  </div>
+                </div>
+                <div className="services__grid">
+                  <div className="services__item">
+                    <img src="" alt="picture" />
+                    <div className="services__text">
+                      <span className="services__name"></span>
+                      <p className="services__overview description-m"></p>
+                    </div>
+                  </div>
+                  <div className="services__item">
+                    <img src="" alt="picture" />
+                    <div className="services__text">
+                      <span className="services__name"></span>
+                      <p className="services__overview description-m"></p>
+                    </div>
+                  </div>
+                  <div className="services__item">
+                    <img src="" alt="picture" />
+                    <div className="services__text">
+                      <span className="services__name"></span>
+                      <p className="services__overview description-m"></p>
+                    </div>
+                  </div>
+                  <div className="services__item">
+                    <img src="" alt="picture" />
+                    <div className="services__text">
+                      <span className="services__name"></span>
+                      <p className="services__overview description-m"></p>
+                    </div>
+                  </div>
+                  <div className="services__item">
+                    <img src="" alt="picture" />
+                    <div className="services__text">
+                      <span className="services__name"></span>
+                      <p className="services__overview description-m"></p>
+                    </div>
+                  </div>
                 </div>
               </section>
           </div>

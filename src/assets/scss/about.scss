@@ -121,23 +121,26 @@
         margin-bottom: 3rem;
         white-space: pre-wrap;
         width: 100%;
+        text-indent: 33.5%;
 
-        span {
-            display: block;
-            margin-left: auto;
-            text-align: right;
+        // span {
+        //     display: block;
+        //     margin-left: auto;
+        //     text-align: right;
 
-            @media (max-width: 480px) {
-                text-align: left;
-            }
-        }
+        //     @media (max-width: 480px) {
+        //         text-align: left;
+        //     }
+        // }
 
         @media (max-width: 1423px) {
+            text-indent: 34.5%;
             font-size: 6rem;
         }
 
         @media (max-width: 900px) {
             font-size: 5.3rem;
+            text-indent: 35%;
             letter-spacing: -2.5px;    
         }
 
@@ -145,11 +148,21 @@
             font-size: calc(23% + 5.5vw);      
         }
 
+        @media (max-width: 620px) {     
+            // text-indent: 24rem;         
+            font-size: calc(23% + 5.5vw);      
+        }
+
+        @media (max-width: 520px) {     
+            // text-indent: 20rem;             
+        }
+
         @media (max-width: 480px) {     
             font-size: calc(5% + 6.17vw);
             white-space: normal;
             text-align: left;
             letter-spacing: -1.5px;  
+            text-indent: 0;
         }
     }
 
@@ -160,11 +173,9 @@
 
         &-l {          
             width: 50.8rem;  
-            font-size: 2.4rem;
 
             @media (max-width: 1423px) {
                 width: 44.8rem;  
-                font-size: 2.2rem;
             }
 
             @media (max-width: 900px) {
@@ -174,7 +185,14 @@
 
         &-m {            
             width: 37.9rem;
-            font-size: 2rem;
+            text-align: left;
+            margin-left: auto;
+            padding-right: 9px;
+
+            @media (max-width: 1423px) {
+                padding-right: 0;
+                width: 34.5rem;
+            }
 
             @media (max-width: 900px) {
                 width: 34.5rem;  
@@ -236,47 +254,9 @@
         @media (max-width: 1423px) {            
             flex-basis: 68.5rem;
         }
-    }
-}
 
-.description {
-    &-l {
-        text-align: left;
-        font-weight: 600;
-        line-height: 1.085;
-        letter-spacing: -0.7px;
-        text-transform: uppercase;
-
-        @media (max-width: 900px) {
-            letter-spacing: -0.25px;
-            line-height: 1.12;
-        }
-
-        @media (max-width: 480px) {
-            letter-spacing: -0.25px;
-            line-height: 1.12;
-        }
-    }
-
-    &-m {
-        font-family: "JetBrainsMono";
-        font-weight: 400;
-        line-height: 1;
-        letter-spacing: -1.44px;
-        text-align: left;
-        margin-left: auto;
-        padding-right: 9px;
-
-        @media (max-width: 1423px) {
-            padding-right: 0;
-        }
-
-        @media (max-width: 900px) {
-            letter-spacing: -1.18px;
-        }
-
-        @media (max-width: 480px) {
-            letter-spacing: -1.18px;
-        }
+        // @media (max-width: 900px) {            
+        //     flex-basis: 58rem;
+        // }
     }
 }

@@ -62,6 +62,11 @@
   
       @media (max-width: 900px) {
         width: 38rem;
+        letter-spacing: -0.8px;
+      }
+
+      .promo__text {
+        line-height: 2.5rem;
       }
     }
   
@@ -70,17 +75,15 @@
       max-width: 25.65rem;
       letter-spacing: -1.34px;
       line-height: 1.03;
+      margin-left: auto;
   
       @media (max-width: 900px) {
-        max-width: 20.5rem;
-      }
-  
-      @media (max-width: 547px) {
-        margin-left: auto;
+        max-width: 21rem;
       }
   
       @media (max-width: 470px) {
         padding-right: 19px;
+        max-width: 24rem;
       }
   
       .promo__text {
@@ -96,11 +99,7 @@
   
       @media (max-width: 900px) {
         font-size: 2.5rem;
-        line-height: 2.7rem;
-      }
-  
-      @media (max-width: 470px) {
-        line-height: 2.5rem;
+        line-height: 2.2rem;
       }
     }
   
@@ -139,14 +138,14 @@
     }
   
     &__box-two {
-      height: 45.5rem;
+      height: 48.5rem;
   
       @media (max-width: 1540px) {
-        height: calc(23.5rem + 15vw);    
+        height: calc(25.5rem + 15vw);    
       }
   
       @media (max-width: 900px) {
-        height: 100rem;
+        height: 98rem;
       }
   
       @media (max-width: 768px) {
