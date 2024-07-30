@@ -8,6 +8,8 @@ import promoImg from './assets/promo.png';
 import lightImg from './assets/light.png';
 import lightTopImg from './assets/lightTop.png';
 import Header from './components/Header';
+import Services from './components/Services';
+
 
 function App() {
     const {isMobile, isTablet, isDesktop} = useMatchMedia();
@@ -95,51 +97,7 @@ function App() {
                   </ul>
                 </div>
               </section>
-              <section className="services">
-                <div className="services__header">
-                  <h2 className="services__title title-3">услуги</h2>
-                  <div className="services__box">
-                    <p className="services__description description-m">Деятельность нашей компании заключается в производстве мебели в&nbsp;стиле loft и различных изделий из&nbsp;дерева, ЛДСП и металла. Однако наши специалисты всегда готовы оказать базовые услуги по обработке металла.</p>
-                  </div>
-                </div>
-                <div className="services__grid">
-                  <div className="services__item">
-                    <img src="" alt="picture" />
-                    <div className="services__text">
-                      <span className="services__name"></span>
-                      <p className="services__overview description-m"></p>
-                    </div>
-                  </div>
-                  <div className="services__item">
-                    <img src="" alt="picture" />
-                    <div className="services__text">
-                      <span className="services__name"></span>
-                      <p className="services__overview description-m"></p>
-                    </div>
-                  </div>
-                  <div className="services__item">
-                    <img src="" alt="picture" />
-                    <div className="services__text">
-                      <span className="services__name"></span>
-                      <p className="services__overview description-m"></p>
-                    </div>
-                  </div>
-                  <div className="services__item">
-                    <img src="" alt="picture" />
-                    <div className="services__text">
-                      <span className="services__name"></span>
-                      <p className="services__overview description-m"></p>
-                    </div>
-                  </div>
-                  <div className="services__item">
-                    <img src="" alt="picture" />
-                    <div className="services__text">
-                      <span className="services__name"></span>
-                      <p className="services__overview description-m"></p>
-                    </div>
-                  </div>
-                </div>
-              </section>
+              <Services/>
           </div>
         </main> 
       </div>
