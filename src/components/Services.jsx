@@ -72,7 +72,7 @@ const Services = () => {
                         </div>
                         ) : (
                         <div className="services__item services__main">                            
-                            <img src={items[0].url} alt={items[0].title} style={{ width: '100%', height: '100%' }} />                            
+                            <img src={items[0].url} alt={items[0].title} style={{width: '100%', height: '100%'}} />
                             <div className="services__text">
                                 <span className="services__name">{items[0].title}</span>
                                 <p className="services__overview description-m">{items[0].description}</p>
@@ -87,13 +87,13 @@ const Services = () => {
                                 cursor: 'pointer', 
                                 backgroundColor: selectedIndex === index ? '#1B1B1B' : 'transparent',
                                 transition: '.2s',
-                                padding: '55px 64px',
+                                padding: '15px 14px',
                                 marginRight: index % 2 === 0 ? '.5rem' : '0',
                                 marginLeft: index % 2 !== 0 ? '.5rem' : '0',
                                 position: 'relative'
                                 }}
                             >
-                            <img src={item.url} alt={item.title} style={{ width: '100%', height: '100%' }} />
+                            <img src={item.url} alt={item.title} style={{ width: '65%'}} />
                             <div className="services__text" 
                                 style={{ 
                                     position: 'absolute',

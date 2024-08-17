@@ -1,0 +1,35 @@
+.stepjob {
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        gap: 5rem;
+    }
+
+    &__title {
+        width: 73rem;
+    }
+
+    &__brackets {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 428px;
+        height: 147px;
+        transform: rotate(-15deg);
+    }
+
+    &__description {
+        transform: rotate(15deg);
+    }
+
+    .bracketL {
+        > path {
+            fill: #000;
+        }
+    }
+
+    .bracketR {
+        transform: scaleX(-1);
+    }
+}

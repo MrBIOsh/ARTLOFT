@@ -1,0 +1,85 @@
+.timeline {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    padding-top: 50px;
+    gap: 20px;
+    // padding-left: 100px;
+    // padding-right: 100px;
+    height: 20rem;
+  }
+  
+  .step {
+    position: relative;
+    // flex: 1;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    // width: 100%;
+    // max-width: 170rem;
+  }
+  
+  .step-number {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 5px;
+  }
+  
+  .circle {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    background-color: #FBFBFB;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  }
+  
+  .step.active .circle {
+    border-color: red;
+    background-color: red;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  
+  .description {
+    margin-top: 5px;
+    color: black;
+    max-width: 270px;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .step.active .description {
+    opacity: 1;
+    max-height: 100px; /* Достаточно большое значение для высоты описания */
+  }
+  
+  .timeline::after {
+    content: "";
+    position: absolute;
+    top: 78px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #ddd;
+    z-index: -1;
+  }
+  
+//   @media (max-width: 900px) {
+//     .timeline {
+//       flex-direction: column;
+//       align-items: center;
+//       padding-top: 20px;
+//     }
+  
+//     .step {
+//       margin-bottom: 20px;
+//     }
+//   }
+  

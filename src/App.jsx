@@ -9,6 +9,7 @@ import lightImg from './assets/light.png';
 import lightTopImg from './assets/lightTop.png';
 import Header from './components/Header';
 import Services from './components/Services';
+import StepJob from './components/StepJob';
 
 
 function App() {
@@ -98,6 +99,7 @@ function App() {
                 </div>
               </section>
               <Services/>
+              <StepJob/>
           </div>
         </main> 
       </div>
